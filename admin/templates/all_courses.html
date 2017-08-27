@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+   <head>
+   <title>All courses:</title>
+   </head>
+   <body>
+       
+      <h1> All courses are: </h1>
+      {% if courses %}
+       {% for course in courses %}
+      <h1> {{ course }},  </h1>
+      {% endfor %}
+      {%else%}
+      No course to show
+      {% endif %}
+    
+      
+      
+      
+      
+   </body>
+   </html>
